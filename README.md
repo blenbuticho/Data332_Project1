@@ -117,4 +117,8 @@ lexicon = get_sentiments("bing")
  
 # 5. Conclusion 
 
+1. Using the a binary lexicon, i have found out that customers had major disputes.
+2. Overall when customers provided their issues, the have had neghative sentimnets. This shows that customers weren't satisfied and needed respoinse from the companies
+3. 
+
 
