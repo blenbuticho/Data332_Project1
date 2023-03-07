@@ -1,6 +1,8 @@
 # Data332_Project No.1
 # Blen Buticho
 
+![stock-photo-sentiment-analysis-for-positive-and-negative-mentions-in-charts-and-graphs-1979061347](https://user-images.githubusercontent.com/118494123/223372713-7a5d09f9-41ea-4820-a615-8ba06376c1bf.jpeg)
+
 ## Overview
 This data is a compilation of grievances filed against companies regarding their consumer financial services and goods. The dataset includes customer complaints about financial products and demonstrates how to group text from customer complaints into the following categories: Consumer loans, mortgages, credit cards, credit reporting, student loans, bank accounts or services, payday loans, money transfers, other financial services, and prepaid cards are all examples of debt collection terms.
 
@@ -80,11 +82,39 @@ lexicon = get_sentiments("bing")
          acast(word ~ sentiment, value.var = "n", fill = 0) %>%
          comparison.cloud(colors = c("purple", "blue"),
                    max.words = 100)
-            
+               
 ![Rplot01ks](https://user-images.githubusercontent.com/118494123/223343557-cbc05562-f60b-4907-90b3-1d79b9175b04.png)
+
+   1. A word cloud is a group or collection of words that are displayed in various sizes. 
+   2. The more pronounced and bold a word is, the more frequently it has been used.
+   3. This word cloud will enable us to more clearly see when customers' general sentiments were
 
 # 4. Shiny App 
 
+      column_names<-colnames(df_2) #for input selections
+      ui<-fluidPage( 
 
+      titlePanel(title = " Customer Complaints"),
+
+      fluidRow(
+      column(2,
+       selectInput('X', 'Choose X',column_names,column_names[4]),
+       selectInput('Y', 'Choose Y',column_names,column_names[2])
+      ),
+      column(4,plotOutput('plot_01')),
+      column(6,DT::dataTableOutput("table_01", width = "100%"))
+      )
+      )
+
+      server<-function(input,output){
+  
+      output$plot_01 <- renderPlot({
+    ggplot(df_2,aes_string(x=input$X, y=input$Y, colour=Input$Splitby))+
+      geom_smooth()
+      }
+
+      shinyApp(ui=ui, server=server)
+ 
+# 5. Conclusion 
 
 
