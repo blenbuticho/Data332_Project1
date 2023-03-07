@@ -1,7 +1,7 @@
 # Data332_Project No.1
 # Blen Buticho
 
-![bigstock-market-sentiment-fear-and-gre-451706057-2880x1800](https://user-images.githubusercontent.com/118494123/223373580-98567a48-8928-4a5c-8ce0-70d5bce3ed55.jpeg)
+![sentiment analysis (1)](https://user-images.githubusercontent.com/118494123/223373760-330bd6dd-5e84-4783-84ed-4acc32e6a418.jpeg)
 
 ## Overview
 This data is a compilation of grievances filed against companies regarding their consumer financial services and goods. The dataset includes customer complaints about financial products and demonstrates how to group text from customer complaints into the following categories: Consumer loans, mortgages, credit cards, credit reporting, student loans, bank accounts or services, payday loans, money transfers, other financial services, and prepaid cards are all examples of debt collection terms.
