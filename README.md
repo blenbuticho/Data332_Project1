@@ -65,9 +65,10 @@ lexicon = get_sentiments("bing")
 ![Rplot01sjcej](https://user-images.githubusercontent.com/118494123/223344090-9dabaf79-0a8f-47ed-a9c4-0727aeff20d7.png)
 
    1. Bing lexicon being. binary lexicon, it only displays two variables which are negative and positive
-   2. it this anlysis done from the Problems that customers experienced which were issues there were twenty four words that displayed negative or positive.
-   3. Because this was based on issues, which typically is negative feedback, the negative sentiment outweighs the positive.
-   4. Negative sentiments like Improper, fraud, false etc. had their counts added to sum over 200,000. While the likes convinence, promise and protetction
+   2. This anlysis is done from the Problems that customers experienced which were issues there were twenty four words that displayed negative or 
+      positive.
+   4. Because this was based on issues, which typically is negative feedback, the negative sentiment outweighs the positive.
+   5. Negative sentiments like Improper, fraud, false etc. had their counts added to sum over 200,000. While the likes convinence, promise and protetction
       were under positive adding up to less than 25,000
       
 
