@@ -54,7 +54,8 @@ lexicon = get_sentiments("bing")
          geom_text(aes(label=NA), vjust=-0.3, size=3.5)+
          theme_minimal()
 
-![Rplot](https://user-images.githubusercontent.com/118494123/223342482-f6f82723-0d5e-4746-955b-26a05453f28c.png)
+![Rplot01sjcej](https://user-images.githubusercontent.com/118494123/223344090-9dabaf79-0a8f-47ed-a9c4-0727aeff20d7.png)
+
 
 # 3. Word Cloud 
 
