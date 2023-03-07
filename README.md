@@ -43,6 +43,12 @@ NRC Sentiment is used to conduct analysis for the first one. This is done by ins
 
 ![NRC LEXICON](https://user-images.githubusercontent.com/118494123/223339419-320efa2f-8a64-41ce-9765-b96cd2dd970e.png)
 
+   1. I created a grpah to show the number of times cerrtain words occured and what their sentiments looked like. based of that i conducted an analysis
+   2. Eight fundamental emotions (angry, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments are listed in the NRC Emotion 
+      Lexicon (negative and positive).
+   3. In this graph we can see joy was the highest emotion recorded while digust and suprise were the two lowest emotions recorded from this Data 
+   4. Positive sentiments outweighed negative showing there were more postive thoughts in the customers feedabck 
+
 ## Word Count by Sentiment using the bing lexicon 
 
 lexicon = get_sentiments("bing")
@@ -55,6 +61,13 @@ lexicon = get_sentiments("bing")
          theme_minimal()
 
 ![Rplot01sjcej](https://user-images.githubusercontent.com/118494123/223344090-9dabaf79-0a8f-47ed-a9c4-0727aeff20d7.png)
+
+   1. Bing lexicon being. binary lexicon, it only displays two variables which are negative and positive
+   2. it this anlysis done from the Problems that customers experienced which were issues there were twenty four words that displayed negative or positive.
+   3. Because this was based on issues, which typically is negative feedback, the negative sentiment outweighs the positive.
+   4. Negative sentiments like Improper, fraud, false etc. had their counts added to sum over 200,000. While the likes convinence, promise and protetction
+      were under positive adding up to less than 25,000
+      
 
 
 # 3. Word Cloud 
@@ -69,6 +82,9 @@ lexicon = get_sentiments("bing")
                    max.words = 100)
             
 ![Rplot01ks](https://user-images.githubusercontent.com/118494123/223343557-cbc05562-f60b-4907-90b3-1d79b9175b04.png)
+
+# 4. Shiny App 
+
 
 
 
