@@ -1,5 +1,5 @@
 # Data332_Project1
-Data Dictionary 
+## Data Dictionary 
 
 
 
@@ -8,4 +8,4 @@ Data Dictionary
 
 
 
-Cleaning the data
+## Cleaning the data
