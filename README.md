@@ -27,10 +27,10 @@ The downloaded files were CSV files, so they had to be converted into RDS becaus
     nrc= tidytext::get_sentiments("nrc")
 NRC Sentiment is used to conduct analysis for the first one. This is done by installing Nrc lexicon in R.
 
-  df_3 =df_2 %>%
-  inner_join(lexicon) %>%
-  group_by(word) %>%
-  count(sentiment, sort = TRUE)
+      df_3 =df_2 %>%
+      inner_join(lexicon) %>%
+      group_by(word) %>%
+      count(sentiment, sort = TRUE)
   
 <img width="283" alt="Screen Shot 2023-03-07 at 12 24 13 AM" src="https://user-images.githubusercontent.com/118494123/223338688-d5937534-a979-448d-babf-7e4ffee9b0bd.png">
 
