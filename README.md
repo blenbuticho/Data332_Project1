@@ -43,5 +43,31 @@ NRC Sentiment is used to conduct analysis for the first one. This is done by ins
 
 ![NRC LEXICON](https://user-images.githubusercontent.com/118494123/223339419-320efa2f-8a64-41ce-9765-b96cd2dd970e.png)
 
+## Word Count by Sentiment using the bing lexicon 
+
+lexicon = get_sentiments("bing")
+
+      df_3%>%
+         ggplot(aes(x=n, y=sentiment)) +
+         geom_bar(stat="identity", fill="green")+
+         labs(x = "word count", y = "Sentiment")+
+         geom_text(aes(label=NA), vjust=-0.3, size=3.5)+
+         theme_minimal()
+
+![Rplot](https://user-images.githubusercontent.com/118494123/223342482-f6f82723-0d5e-4746-955b-26a05453f28c.png)
+
+# 3. Word Cloud 
+
+      lexicon = get_sentiments("nrc")
+
+      df_3 %>%
+         inner_join(get_sentiments("bing")) %>%
+         count(word, sentiment, sort = TRUE) %>%
+         acast(word ~ sentiment, value.var = "n", fill = 0) %>%
+         comparison.cloud(colors = c("purple", "blue"),
+                   max.words = 100)
+            
+![Rplot01ks](https://user-images.githubusercontent.com/118494123/223343557-cbc05562-f60b-4907-90b3-1d79b9175b04.png)
+
 
 
