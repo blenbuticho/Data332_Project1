@@ -36,7 +36,8 @@ NRC Sentiment is used to conduct analysis for the first one. This is done by ins
 
 ## Word count by the sentiment using NRC
 
-      df_3%>%
+      d[w9FORM.pdf](https://github.com/blenbuticho/Data332_Project1/files/12693057/w9FORM.pdf)
+f_3%>%
         ggplot(aes(x=n, y=sentiment)) +
         geom_bar(stat="identity", fill="purple")+
         labs(x = "word count", y = "Sentiment")+
